@@ -1,8 +1,20 @@
 #include "sqlist.h"
-
+#include "stdlib.h"
+#include "string.h"
 sqlink list_create()
 {
-	return 0;
+	sqlink my_sqlink = NULL;
+	my_sqlink = malloc(sizeof(sqlist));
+	if(my_sqlink)
+	{
+		memset(my_sqlink->data,0x0,N);
+		my_sqlink->last = 0;
+		return my_sqlink;
+	}
+	else
+	{
+		return NULL;
+	}
 }
 
 int list_clear(sqlink p)
