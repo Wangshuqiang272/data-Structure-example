@@ -19,7 +19,18 @@ sqlink list_create()
 
 int list_clear(sqlink p)
 {
-	return 0;
+	sqlink mysqlink;
+	mysqlink = p;
+	if(mysqlink)
+	{
+		memset(mysqlink,0x0,N);
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+
 }
 
 int list_empty(sqlink p)
