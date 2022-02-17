@@ -31,8 +31,28 @@ sqlink list_create();
 */
 int list_clear(sqlink p);
 
+/**
+*	@brief judgment whether the list empty
+*	@param the handle of waiting clear list
+*	@return  0 -> param Wrong
+*		-1 -> Not empty
+*		 1 -> empty 
+*/
 int list_empty(sqlink p);
+/**
+*	@brief calculate the length of list
+*	@param the handle of waiting clear list
+*	@return -1 -> param Wrong
+*		x -> the length of list 
+*/
 int list_length(sqlink p);
+/**
+*	@brief confirm the special value's location in the list
+*	@param the handle of waiting clear list
+*	@return  -1 -> param wrong
+*		 -2 -> didn't find 
+*		  x -> location  
+*/
 int list_locate(sqlink p,data_t vaule);
 int list_insert(sqlink p,data_t value,data_t pos);
 

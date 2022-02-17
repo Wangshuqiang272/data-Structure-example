@@ -35,17 +35,69 @@ int list_clear(sqlink p)
 
 int list_empty(sqlink p)
 {
-	return 0;
+	int i;
+	if(p)
+	{
+		for(i = 0;i < N;i++)
+		{
+			if(p->data[i])
+			{
+				return -1;	
+			}		
+		}
+		return 1;
+		
+	}
+	else
+	{	
+		return 0;
+	}
+
 }
 
 int list_length(sqlink p)
 {
-	return 0;
+	int i,flag = 0;
+	if(p)
+	{
+		for(i = 0;i < N;i++)
+		{
+			if(p->data[i])
+			{
+				p->last = i;
+				flag = 1;
+				break;
+			}
+		}
+		if(flag = 1)
+			return p->last;
+		else
+			return 0;
+	}
+	else
+	{
+		return -1;
+	}
 }
 
 int list_locate(sqlink p,data_t value)
 {
- 	return 0;
+	int i;
+ 	if(p)
+	{
+		for(i = 0;i < N; i++)
+		{
+			if(p->data[i] == value)
+			{
+				return i;	
+			}
+		}
+		return -2;
+	}
+	else
+	{
+		return -1;
+	}
 }
 
 int list_insert(sqlink p,data_t value,int pos)
