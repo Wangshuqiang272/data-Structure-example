@@ -4,6 +4,8 @@ project(data_structure)
 
 set(SRC_FILE main.c)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
 add_executable(launcher ${SRC_FILE})
 
 add_subdirectory(liner/single_link)
