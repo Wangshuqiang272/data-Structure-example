@@ -17,6 +17,8 @@ add_executable(launcher ${SRC_FILE})
 add_subdirectory(liner/single_link)
 add_subdirectory(sort)
 add_subdirectory(common)
+add_subdirectory(liner/static_link)
 
 target_link_libraries(launcher single_link)
 target_link_libraries(launcher quick_sort)
+target_link_libraries(launcher static_link)

@@ -1,0 +1,1 @@
+add_library(static_link STATIC static_link.c)

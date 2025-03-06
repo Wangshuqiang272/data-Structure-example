@@ -19,6 +19,7 @@
  * includes
  */
 #include "liner/single_link/liner.h"
+#include "liner/static_link/static_link.h"
 #include "sort/quick_sort.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -52,7 +53,8 @@
  */
 
 int main(int argc, char *argv[]) {
-  // single_liner_test();
-  quick_sort_test();
-  return 0;
+    // single_liner_test();
+    // quick_sort_test();
+    // static_link_test();
+    return 0;
 }
