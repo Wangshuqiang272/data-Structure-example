@@ -201,7 +201,6 @@ static void delete_data_according_index(node_t *liner, int index) {
     return;
   }
 
-  int p_index = 0;
   node_t *tail = liner->next;
   node_t *head = liner;
   for (int i = 1; i < index; i++) {

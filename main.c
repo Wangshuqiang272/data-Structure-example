@@ -18,6 +18,7 @@
 /* ======================================================================================
  * includes
  */
+#include "liner/bidire_circle_link/bidire_circle_link.h"
 #include "liner/single_link/liner.h"
 #include "liner/static_link/static_link.h"
 #include "sort/quick_sort.h"
@@ -56,5 +57,6 @@ int main(int argc, char *argv[]) {
     // single_liner_test();
     // quick_sort_test();
     // static_link_test();
+    // bidire_circle_link_test();
     return 0;
 }

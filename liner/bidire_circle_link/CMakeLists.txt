@@ -1,0 +1,1 @@
+add_library(bidire_link STATIC bidire_circle_link.c)
