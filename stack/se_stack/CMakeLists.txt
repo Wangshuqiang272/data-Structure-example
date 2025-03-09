@@ -1,0 +1,1 @@
+add_library(se_stack STATIC se_stack.c)
