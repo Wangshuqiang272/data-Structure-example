@@ -22,6 +22,7 @@
 #include "liner/single_link/liner.h"
 #include "liner/static_link/static_link.h"
 #include "sort/quick_sort.h"
+#include "stack/link_stack/link_stack.h"
 #include "stack/se_stack/se_stack.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,5 +61,6 @@ int main(int argc, char *argv[]) {
     // static_link_test();
     // bidire_circle_link_test();
     // sequence_stack_test();
+    link_stack_test();
     return 0;
 }
