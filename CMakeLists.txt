@@ -20,9 +20,14 @@ add_subdirectory(common)
 add_subdirectory(liner/static_link)
 add_subdirectory(liner/bidire_circle_link)
 add_subdirectory(stack/se_stack)
+add_subdirectory(stack/link_stack)
 
-target_link_libraries(launcher single_link)
-target_link_libraries(launcher quick_sort)
-target_link_libraries(launcher static_link)
-target_link_libraries(launcher bidire_link)
-target_link_libraries(launcher se_stack)
+set(library single_link 
+            quick_sort 
+            static_link 
+            bidire_link 
+            se_stack 
+            link_stack)
+
+
+target_link_libraries(launcher ${library})
